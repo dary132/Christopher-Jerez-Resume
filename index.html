@@ -169,7 +169,7 @@
   }
 
   .title {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -340,6 +340,76 @@
     transition: all 0.2s ease;
   }
 
+  /* ── About / Projects ── */
+  .section-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 14px;
+  }
+
+  .about {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text);
+    opacity: 0.85;
+    animation: fadeUp 0.6s 0.5s ease both;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeUp 0.6s 0.6s ease both;
+  }
+
+  .project {
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-left: 2px solid var(--purple);
+  }
+
+  .project-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text);
+    opacity: 0.75;
+  }
+
+  .project-stack {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
   /* ── Footer ── */
   .footer {
     text-align: center;
@@ -374,6 +444,7 @@
     </div>
 
     <div class="name">Chris Jerez</div>
+    <div class="title">Solutions Analyst · AI Builder</div>
     <div class="status-bar">
       <div class="status-dot"></div>
       <div class="status-text">Online</div>
@@ -462,6 +533,70 @@
   </div>
   <div class="link-arrow">▶</div>
 </a>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="about">
+    <div class="section-label">About</div>
+    Solutions Analyst with 10+ years of B2B client-solutions experience and hands-on
+    exposure to insurance and workers’ compensation operations. I design and build
+    AI-powered workflow tools (voice agents, chatbots, and governed AI agents) that turn
+    business requirements into secure, working solutions.
+    <div class="tags">
+      <span class="tag">Claude &amp; Claude Code</span>
+      <span class="tag">MCP</span>
+      <span class="tag">Deepgram</span>
+      <span class="tag">ElevenLabs</span>
+      <span class="tag">Twilio</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Laravel</span>
+      <span class="tag">SwiftUI</span>
+      <span class="tag">CompTIA Security+</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-label">AI &amp; Projects</div>
+  <div class="projects">
+
+    <div class="project">
+      <div class="project-name">AI Voice Receptionist</div>
+      <div class="project-desc">AI phone agent that answers calls, books appointments, takes messages, transfers calls, and texts the owner about urgent issues. Built with PII redaction, audit logs, per-call cost tracking, and 117 automated tests.</div>
+      <div class="project-stack">Twilio · Deepgram · Claude · ElevenLabs · Google Calendar</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">AI Agent Team</div>
+      <div class="project-desc">Specialized Claude agents for sales, SEO &amp; analytics, Amazon marketplace, and development, governed by rules to verify facts, cite sources, and store only verified knowledge.</div>
+      <div class="project-stack">Claude Code · MCP</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">AI Website Chatbot</div>
+      <div class="project-desc">Claude-powered assistant answering visitor questions from a curated business knowledge base, live on darytechnologies.com and a client site.</div>
+      <div class="project-stack">Claude API · Node.js</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">HIPAA Requirements Knowledge Base</div>
+      <div class="project-desc">Translated HIPAA Security Rule technical safeguards (§ 164.312) into 48 testable requirements with a traceability matrix and five security standards.</div>
+      <div class="project-stack">Security &amp; Compliance</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Pay-Per-Minute Call Platform</div>
+      <div class="project-desc">Prepaid wallets, per-minute call billing, and an append-only financial ledger; two security reviews completed.</div>
+      <div class="project-stack">Stripe · SignalWire · PostgreSQL</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Client Solutions</div>
+      <div class="project-desc">Multi-tenant form gateway serving live client sites; a 23-page real-estate &amp; lending site with 3 mortgage calculators; Stripe checkout for a CPR training business; an iOS speech-analysis app.</div>
+      <div class="project-stack">Node.js · Next.js · Stripe · SwiftUI</div>
+    </div>
 
   </div>
 
